@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="450" viewBox="0 0 1000 450" role="img" aria-labelledby="t d">
+<title id="t">FitZone Gym Assistant architecture</title><desc id="d">Current browser prototype and planned production components.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#39785a"/></marker><style>text{font-family:Arial,sans-serif;fill:#183629}.box{fill:#fff;stroke:#78a88b;stroke-width:2}.future{fill:#f4f7f5;stroke:#8c9c91;stroke-width:2;stroke-dasharray:7 5}.arrow{stroke:#39785a;stroke-width:2.5;marker-end:url(#a)}.label{font-size:16px;font-weight:bold}.small{font-size:13px;fill:#53665a}.title{font-size:22px;font-weight:bold}</style></defs>
+<rect width="1000" height="450" fill="#f7faf7"/><text x="40" y="42" class="title">FitZone Gym Assistant — System Architecture</text>
+<text x="40" y="75" class="label">CURRENT MVP</text>
+<rect x="40" y="100" width="180" height="100" rx="14" class="box"/><text x="130" y="140" text-anchor="middle" class="label">Visitor</text><text x="130" y="165" text-anchor="middle" class="small">Types a message</text>
+<rect x="300" y="100" width="260" height="100" rx="14" class="box"/><text x="430" y="137" text-anchor="middle" class="label">Website (index.html)</text><text x="430" y="163" text-anchor="middle" class="small">Chat · visitor form · tour summary</text>
+<rect x="650" y="100" width="290" height="100" rx="14" class="box"/><text x="795" y="137" text-anchor="middle" class="label">In-browser JavaScript</text><text x="795" y="163" text-anchor="middle" class="small">Scripted replies · status · summary</text>
+<line x1="220" y1="150" x2="292" y2="150" class="arrow"/><line x1="560" y1="150" x2="642" y2="150" class="arrow"/>
+<text x="40" y="250" class="label">FUTURE PRODUCTION EXTENSIONS</text>
+<rect x="40" y="280" width="200" height="105" rx="14" class="future"/><text x="140" y="320" text-anchor="middle" class="label">AI + FAQ retrieval</text><text x="140" y="346" text-anchor="middle" class="small">Grounded answers</text>
+<rect x="285" y="280" width="200" height="105" rx="14" class="future"/><text x="385" y="320" text-anchor="middle" class="label">Secure lead database</text><text x="385" y="346" text-anchor="middle" class="small">Protected visitor records</text>
+<rect x="530" y="280" width="200" height="105" rx="14" class="future"/><text x="630" y="320" text-anchor="middle" class="label">Calendar + CRM</text><text x="630" y="346" text-anchor="middle" class="small">Confirm tour · staff follow-up</text>
+<rect x="775" y="280" width="165" height="105" rx="14" class="future"/><text x="857" y="320" text-anchor="middle" class="label">Voice services</text><text x="857" y="346" text-anchor="middle" class="small">Speech in/out</text>
+<text x="40" y="420" class="small">Solid boxes = implemented in this demo. Dashed boxes = proposed next steps.</text></svg>
