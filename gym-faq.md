@@ -1,10 +1,12 @@
-# FitZone Gym — fictional demo FAQ
+# FitZone Gym — sample FAQ
 
-- **What does FitZone offer?** Strength training equipment, cardio machines, and group exercise classes.
-- **Can I visit before joining?** Yes. A visitor can request a free gym tour.
-- **What memberships are available?** Options vary by branch and current offer. Gym staff can explain them during the tour.
-- **What are the opening hours?** Hours vary by branch. The staff can confirm the selected location's schedule.
-- **Can you recommend a fitness plan?** Staff can discuss the visitor's goals and suitable options. This prototype does not give medical or personalized exercise advice.
-- **How do I book a tour?** Share a preferred FitZone location and date/time. Staff must confirm the visit.
+All details are fictional. The browser demo searches these topics by matching words; it does not use full RAG or an AI model.
 
-This FAQ is sample content for a fictional gym. The current prototype does not perform real document retrieval; its responses are scripted.
+- **Equipment:** FitZone has strength-training equipment and cardio machines.
+- **Classes:** FitZone offers group exercise classes. Schedule varies by branch.
+- **Membership / price:** Membership options and prices vary by branch and current offer. Staff can explain plans during a tour.
+- **Opening hours:** Hours vary by branch. Staff can confirm the selected location's hours.
+- **Tour:** Visitors can request a free gym tour. Staff must confirm availability.
+- **Trainer:** Staff can discuss trainer availability and options during the visit.
+
+If an answer is unavailable, the prototype should guide the visitor toward a staff follow-up rather than inventing details.

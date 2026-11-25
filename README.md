@@ -1,31 +1,37 @@
-# FitZone Gym Membership Assistant
+# FitZone Gym Sales Agent Prototype
 
-A small, fictional gym website prototype. It guides a visitor through sharing their fitness goal, preferred gym location, membership interest, and a preferred tour time. It then shows a lead status and conversation summary.
+A small browser prototype demonstrating a gym sales conversation from first question through a saved tour request and staff summary.
 
-## Run the demo
+## Run it
 
-1. Download or clone this project folder.
-2. Open `index.html` in a recent browser (Chrome is recommended for optional speech features).
-3. Type a message in the conversation box and press **Send**. No installation, account, API key, or internet connection is needed for the text demo.
-4. Enter or review the visitor details on the right. Choose a tour time and press **Save visitor & tour**.
-
-The project is a front-end prototype. It does not contact a real gym, save to a server or CRM, or use an AI model. Speech input and spoken replies use browser features when available; text is the reliable demo path.
-
-## Example demo
-
-Try: “I want to build strength and I’m interested in membership.” Then enter a name, preferred location, membership interest, and tour time. Show the status, saved tour, and summary.
+1. Open `index.html` in Chrome or another modern browser. The text demo works locally without setup or an API key.
+2. Ask about a membership, classes, equipment, opening hours, or a tour. The assistant searches the sample FAQ using simple keyword matching.
+3. Enter a visitor name, fitness goal, preferred location, membership interest, and future tour date/time.
+4. Click **Save visitor & tour**. The request is stored in this browser on this device; staff still need to confirm the appointment.
+5. Click **Download calendar invite** to create an `.ics` request to import into a calendar, or **Export lead list (CSV)** to download the locally saved records.
+6. Try **Speak** or **Read replies aloud** if the browser supports speech features and grants permission. Text is the reliable demo path.
 
 ## Files
 
-- `index.html` — the complete runnable prototype.
-- `gym-faq.md` — fictional information used to describe the demo knowledge base.
+- `index.html` — runnable prototype.
+- `gym-faq.md` — sample knowledge base.
 - `report.md` — one-page project report.
-- `architecture.svg` — system architecture diagram.
+- `architecture.svg` — current and proposed system architecture.
+- `criteria-map.md` — honest mapping from the challenge requirements to this prototype.
 
-## Current features and next steps
+## What is implemented
 
-**Implemented:** typed conversation, scripted responses, visitor detail fields, basic lead status, tour time entry, summary, and optional browser speech features.
+- Typed chat and optional browser speech input/output.
+- Keyword-based FAQ lookup with follow-up prompts.
+- Session conversation history.
+- Basic lead score based on four collected fields and keyword sentiment label.
+- Summary and tour request saved in browser local storage.
+- Calendar invite (`.ics`) and lead list (`.csv`) exports.
 
-**Future work:** connect a language model with a grounded FAQ retrieval system, persist records in a secure database, integrate a real calendar/CRM, add reliable phone calling and multilingual support, and evaluate answer quality and safety.
+## Limitations (explain these honestly)
 
-All company and customer details in this project are fictional. Do not add API keys or real customer data to the repository.
+This is a rules-based prototype, not a live generative AI service. FAQ matching is not full RAG; sentiment and lead score use simple rules; Hindi speech input is recognized but replies are English. The `.ics` file is a tour request the user imports; it is not a confirmed booking. CSV export is not a live CRM integration. There is no phone network, server, or secure database. Do not enter real customer data.
+
+## Next production steps
+
+Add a grounded RAG pipeline and LLM, multilingual responses, secure server-side storage, real calendar and CRM connectors, robust telephony, monitoring, consent handling, staff escalation, and load testing. See `report.md` for scale and cost considerations.
